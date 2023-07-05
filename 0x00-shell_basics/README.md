@@ -8,4 +8,5 @@ Script that creates a directory named my first directory in the /tmp/ directory
 Move the file betty from /tmp/ to /tmp/my first directory     
 Delete the file betty    
 Delete the directory my first directory   
-Script that changes the working directory to the previous one
+Script that changes the working directory to the previous one   
+List files
