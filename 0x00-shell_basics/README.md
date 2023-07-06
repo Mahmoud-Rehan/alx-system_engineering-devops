@@ -12,3 +12,4 @@ Script that changes the working directory to the previous one
 List files
 Print the type of the file named iamafile
 Create symbolic link
+Copy html files
