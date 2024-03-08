@@ -10,7 +10,6 @@ trap "echo I hate the kill command;destroy" 15
 trap "echo Y U no love me?!;destroy" 2
 
 echo $$ >> /var/run/holbertonscript.pid
-
 while [ true ]; do
     echo To infinity and beyond;
 done
