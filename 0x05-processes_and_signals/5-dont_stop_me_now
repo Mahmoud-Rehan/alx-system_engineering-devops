@@ -1,3 +1,7 @@
 #!/usr/bin/env bash
 # Stops a process
-kill $(pgrep -f "4-to_infinity_and_beyond")
+mypid=$(pgrep -f "4-to_infinity_and_beyond")
+if [ -n "$pid" ]; then
+    kill "$pid"
+fi
+
