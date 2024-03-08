@@ -9,11 +9,10 @@ destroy() {
 
 echo "$$" > /var/run/myscript.pid
 
-while true
-do
+while true; do
   echo "To infinity and beyond"
   sleep 2
   trap 'echo "Y U no love me?!"' 2
   trap 'echo "I hate the kill command" && destroy' 15
-  trap 'destroy' SIGQUIT
+  trap 'destroy' 3
 done
