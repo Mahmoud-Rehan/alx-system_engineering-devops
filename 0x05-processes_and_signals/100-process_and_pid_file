@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
-# Creates the file /var/run/holbertonscript.pid containing its PID
+# Creates the file /var/run/holbertonscript.pid
+# containing its PID
 
 function destroy() {
     rm /var/run/holbertonscript.pid
@@ -10,7 +11,6 @@ trap "echo I hate the kill command;destroy" SIGTERM
 trap "echo Y U no love me?!;destroy" SIGINT
 
 echo $$ >> /var/run/holbertonscript.pid
-
 while [ true ]; do
     echo To infinity and beyond;
 done
