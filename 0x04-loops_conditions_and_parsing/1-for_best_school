@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Bash script that displays Best School
 
-for [ NUM=0; NUM -lt 10; NUM++ ]; do
+for ((NUM=0; NUM < 10; NUM++)); do
 	echo Best School
 done
