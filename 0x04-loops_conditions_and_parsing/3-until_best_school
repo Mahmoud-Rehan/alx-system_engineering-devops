@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Bash script that displays Best School
+
+NUM=0
+
+until [ $NUM -eq 10 ]; do
+	echo Best School
+	((NUM++))
+done
