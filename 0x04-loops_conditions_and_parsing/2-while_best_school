@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+NUM=0
+
+while [ $NUM -lt 10 ]; do
+	echo Best School
+	((NUM++))
+done
