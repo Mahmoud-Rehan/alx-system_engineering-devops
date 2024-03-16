@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# Bash script that displays Best School
+
+NUM=0
+
+
+while [ $NUM -lt 10 ]; do
+	if [ $NUM -eq 9 ]; then
+		echo Hi
+	fi
+	
+	echo Best School
+	(( NUM++ ))
+done
