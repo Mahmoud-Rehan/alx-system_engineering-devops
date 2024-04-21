@@ -10,6 +10,7 @@ int infinite_while(void);
 
 /**
  * main - Entry point.
+ *
  * Return: EXIT_SUCCESS.
  */
 
@@ -43,14 +44,15 @@ int main(void)
 
 /**
  * infinite_while - Sleep to death.
+ *
  * Return: 0 Always.
  */
 
 int infinite_while(void)
 {
-    while (1)
-    {
-        sleep(1);
-    }
-    return (0);
+	while (1)
+	{
+		sleep(1);
+	}
+	return (0);
 }
