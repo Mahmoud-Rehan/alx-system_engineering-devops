@@ -1,11 +1,10 @@
 #!/usr/bin/env bash
-# Configure a new Nginx server so that redirecting to another page
+# Bash script that configures a new Ubuntu machine topPerform a redirection
 
 
-sudo apt-get -y update
-sudo apt-get -y install nginx
-sudo ufw allow 'Nginx HTTP'
-echo "Hello World" | sudo tee /var/www/html/index.html
-string="server_name _;\n\trewrite ^\/redirect_me https://github.com/Mahmoud-Rehan/ permanent;"
-sudo sed -i "s/server_name _;$string/" /etc/nginx/sites-available/default
+sudo apt-get update
+sudo apt-get install -y nginx
+echo "Hello World!" | sudo tee /var/www/html/index.html
+string_replacement="server_name _;\n\trewrite ^\/redirect_me https:\/\/github.com\/Mahmoud-Rehan permanent;"
+sudo sed -i "s/server_name _;/$string_replacement/" /etc/nginx/sites-enabled/default
 sudo service nginx restart
