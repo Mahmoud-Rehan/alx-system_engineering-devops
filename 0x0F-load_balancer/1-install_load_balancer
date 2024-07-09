@@ -12,7 +12,7 @@ server_config=\
 frontend mahmoudrehan_frontend
         bind *:80
         mode http
-        default_backend app
+        default_backend mahmoudrehan_backend
 
 backend mahmoudrehan_backend
         balance roundrobin
