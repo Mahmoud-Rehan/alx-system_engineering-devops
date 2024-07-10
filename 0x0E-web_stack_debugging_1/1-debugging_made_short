@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+#  Bash script that configures a server to make Nginx must be running and listening on port 80 of all the server’s active IPv4 IPs -f added to to forcefully remove file
+ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+sudo service nginx restart
+pkill -o nginx
