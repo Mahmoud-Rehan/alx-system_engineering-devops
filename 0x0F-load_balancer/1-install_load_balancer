@@ -9,13 +9,12 @@ sudo chown $USER:$USER /etc/haproxy/haproxy.cfg
 
 server_config=\
 "
-frontend http_front
+frontend cryptotechcoder
         bind *:80
         mode http
-        default_backend servers
+        default_backend app
 
 backend servers
-	mode http
         balance roundrobin
 	http-request set-header X-Served-By %[srv_name]
         server 460064-web-01 34.204.81.238 check
