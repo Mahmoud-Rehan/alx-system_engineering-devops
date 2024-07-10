@@ -17,6 +17,7 @@ frontend http_front
 backend servers
 	mode http
         balance roundrobin
+	http-request set-header X-Served-By %[srv_name]
         server 460064-web-01 34.204.81.238 check
         server 460064-web-02 54.157.171.43 check
 "
